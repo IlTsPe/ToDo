@@ -16,10 +16,11 @@ body {
 }
 
 .container {
-	max-width: 500px;
+	max-width: 520px;
 	display: flex;
 	flex-direction: column;
 	margin: 0 auto;
+	padding: 10px;
 }
 
 h1 {
