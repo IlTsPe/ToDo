@@ -33,9 +33,6 @@ ol {
 	margin-bottom: 20px;
 }
 
-ol::marker {
-}
-
 li {
 	position: relative;
 	max-width: 350px;
