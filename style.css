@@ -11,16 +11,17 @@
 }
 
 body {
+	font-family: sans-serif;
 	font-size: 16px;
 	font-weight: 600;
 }
 
 .container {
-	max-width: 520px;
+	max-width: 500px;
 	display: flex;
 	flex-direction: column;
 	margin: 0 auto;
-	padding: 10px;
+	padding: 25px;
 }
 
 h1 {
@@ -32,9 +33,37 @@ ol {
 	margin-bottom: 20px;
 }
 
+ol::marker {
+}
+
 li {
+	position: relative;
 	max-width: 350px;
-	margin-bottom: 10px;
+	margin-bottom: 20px;
+}
+
+.new-item {
+	padding-left: 10px;
+}
+
+.new-item::before {
+	content: "";
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	left: 0;
+	width: 6px;
+	height: 6px;
+	background-color: rgb(132, 102, 240);
+	border-radius: 100%;
+}
+
+.rewq {
+	font-family: sans-serif;
+	text-transform: uppercase;
+	font-size: 18px;
+	color: tomato;
+	text-decoration: underline;
 }
 
 form {
@@ -120,3 +149,5 @@ input:focus {
 .none{
 	display: none;
 }
+
+ul li{list-style: none;}
